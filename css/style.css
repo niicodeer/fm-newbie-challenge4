@@ -126,7 +126,7 @@ body{
         background-size: contain;
     }
 }    
-@media screen and (min-width:1280px){
+@media screen and (min-width:1441px){
     body{
         font-size: 1.2em
     } 
