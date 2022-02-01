@@ -7,7 +7,7 @@
 }
 body{
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     background-color:var(--Pale-blue);
     width: 100vw;
     height: 100vh;
@@ -39,6 +39,7 @@ body{
     text-align: center;
 }
 .description__title{
+    font-size: 1.5rem;
     font-weight: 900;
 }
 .description__text{
@@ -51,42 +52,39 @@ body{
     display: flex;
     justify-content: center ;
     align-items: center;
-    width: 325px;
     height: auto;
     background-color: hsla(225, 100%, 94%,0.3);  
     border-radius: 10px;
-    padding:  0 20px;
 }
 .plan__icon-music{
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
 }
 .card__plan div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 5px;
+    margin: 0;
+    padding: 10px 1px;
 }
 .plan__title, .plan__price, .plan__change{
-    font-size: 14px;
+    font-size: 1rem;
+    font-weight: 700;
 }
 .plan__title{
-    margin: 15px 10px 5px;
-    font-weight: 700;
+    margin-bottom: -5px;
     letter-spacing: 0.4px;
 }
 .plan__price{
-    margin: 0 15px 15px;
+    margin-top: 10px;
     color: var(--Desaturated-blue);
-    font-weight: 700;
 }
 .plan__change{
     display: block;
     color: var(--Bright-blue);
-    font-weight: bold;
-    margin-left: 50px;
+    padding-left: 1.2em;
 }
 .plan__change:hover{
     opacity: .7;
@@ -96,7 +94,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 325px;
 }
 .btn__proceed{
     text-decoration: none;
@@ -128,57 +125,21 @@ body{
         background-image: url(../images/pattern-background-desktop.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        font-size: 20px;
+    }
+}    
+@media screen and (min-width:1280px){
+    body{
+        font-size: 1.2em
     } 
     .card{
         min-width: 375px;
-        width: 30%;
+        width: 32vw;
     }
-    .card__plan, .card__btn {
-        width: 86%;
-        height: auto;
-    } 
-    .plan__change{
-        margin-left: auto;
+    .description__title{
+        font-size: 1.5em;
     }
     .plan__title, .plan__price, .plan__change{
-        font-size: 17px;
-    }
-    .card__plan div{
-        text-align: center;
-    }
-    .btn__proceed, .btn__cancel{
-        word-spacing: 5px;
-    }
+        font-size: 1em
+    }  
 }
-@media screen and (min-width:1440px){
-    body{font-size: 32px}
-    .card{
-        min-width: 375px;
-        width: 40%;
-    }
-    .card div{
-        margin: 40px 35px;
-    }
-    .card__plan, .card__btn {
-        width: 86%;
-        height: auto;
-    }
-    .plan__change{
-        margin-left: auto;
-    }
-    .plan__title, .plan__price, .plan__change{
-        font-size: 24px;
-    }
-    .card__plan div{
-        margin-left: 15%;
-    }
-    .btn__proceed, .btn__cancel{
-        word-spacing: 10px;
-    }
-    .plan__icon-music{
-        margin-left: 10%;
-        width: 10%;
-        height: 10%;
-    }
-}
+
